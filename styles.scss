@@ -8,17 +8,19 @@
 body {
     width: 100vw;
     height: 100vh;
+    background: $main-yellow;
+    color: $main-pink;
     @include flexDisplay();
     header {
         font-family: 'Kirang Haerang', cursive;
         text-align: center;
         h1 {
             font-weight: 500;
-            font-size: 3em;
+            font-size: 3.5em;
         }
         span {
             font-weight: 200;
-            font-size: 1.75em;
+            font-size: 2em;
         }
     }
     .generated-info {
@@ -33,6 +35,10 @@ body {
             height: 50px;
             border-radius: 10px;
             outline: none;
+            font-weight: 800;
+            background: $main-pink;
+            color: $main-yellow;
+            border: none;
             transition: transform 300ms ease-out;
             &:hover {
                 cursor: pointer;
