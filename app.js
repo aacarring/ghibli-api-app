@@ -41,6 +41,12 @@ function generateCharacter() {
             let name = data[i].name;
             let gender = data[i].gender;
             let age = data[i].age;
+            if (gender === "NA") {
+                gender = "Unspecified";
+            }
+            if (age === "") {
+                age = "Unspecified";
+            }
             charInfo.innerHTML =  `
                 <span>Name: ${name}</span>
                 <span>Gender: ${gender}</span>
