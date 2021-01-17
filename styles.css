@@ -5,8 +5,8 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   background: #FCE77D;
   color: #F96167;
   display: flex;
@@ -15,8 +15,11 @@ body {
   align-items: center;
 }
 body header {
+  margin-top: 5vh;
+  justify-self: flex-start;
   font-family: "Kirang Haerang", cursive;
   text-align: center;
+  width: 75vw;
 }
 body header h1 {
   font-weight: 500;
@@ -26,10 +29,40 @@ body header span {
   font-weight: 200;
   font-size: 2em;
 }
+@media (max-width: 446px) {
+  body header h1 {
+    font-size: 3em;
+  }
+  body header span {
+    font-size: 1.5em;
+  }
+}
 body .generated-info {
+  height: 40vh;
+  overflow: scroll;
   font-family: monospace;
   font-size: 1em;
   margin: 5vh 0;
+  text-align: center;
+  width: 75vw;
+}
+body .generated-info img {
+  width: auto;
+  height: 95%;
+}
+body .generated-info span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5vh;
+  font-size: 1.25em;
+  line-height: 2;
+  font-weight: 500;
+}
+body .buttons {
+  margin-bottom: 5vh;
+  justify-self: flex-end;
 }
 body .buttons button {
   margin: 0 15px;
@@ -46,6 +79,13 @@ body .buttons button {
 body .buttons button:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+@media (max-width: 322px) {
+  body .buttons button {
+    width: 65px;
+    height: 40px;
+    margin: 0 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

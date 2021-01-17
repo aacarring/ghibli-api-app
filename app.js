@@ -13,13 +13,13 @@ function generateFilm() {
             }
         })
         .then(data => { 
-            let i = Math.floor(Math.random() * data.length + 1);
+            let i = Math.floor(Math.random() * data.length);
             let filmInfo = document.createElement('p');
             let title = data[i].title;
             let description = data[i].description;
-            filmInfo.textContent =  `
-                Title: ${title}
-                Description: ${description}
+            filmInfo.innerHTML =  `
+                <span>Title: ${title}</span>
+                <span>Description: ${description}</span>
             `;
             generatedInfoDiv.appendChild(filmInfo);
         });
@@ -36,16 +36,15 @@ function generateCharacter() {
             }
         })
         .then(data => { 
-            console.log(data);
-            let i = Math.floor(Math.random() * data.length + 1);
+            let i = Math.floor(Math.random() * data.length);
             let charInfo = document.createElement('p');
             let name = data[i].name;
             let gender = data[i].gender;
             let age = data[i].age;
-            charInfo.textContent =  `
-                Name: ${name}
-                Gender: ${gender}
-                Age: ${age}
+            charInfo.innerHTML =  `
+                <span>Name: ${name}</span>
+                <span>Gender: ${gender}</span>
+                <span>Age: ${age}</span>
             `;
             generatedInfoDiv.appendChild(charInfo);
         });
@@ -62,16 +61,15 @@ function generateLocation() {
             }
         })
         .then(data => { 
-            console.log(data);
-            let i = Math.floor(Math.random() * data.length + 1);
+            let i = Math.floor(Math.random() * data.length);
             let locInfo = document.createElement('p');
             let name = data[i].name;
             let terrain = data[i].terrain;
             let climate = data[i].climate;
-            locInfo.textContent =  `
-                Name: ${name}
-                Terrain: ${terrain}
-                Climate: ${climate}
+            locInfo.innerHTML =  `
+                <span>Name: ${name}</span>
+                <span>Terrain: ${terrain}</span>
+                <span>Climate: ${climate}</span>
             `;
             generatedInfoDiv.appendChild(locInfo);
         });
