@@ -1,0 +1,43 @@
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    @include flexDisplay();
+    header {
+        font-family: 'Kirang Haerang', cursive;
+        text-align: center;
+        h1 {
+            font-weight: 500;
+            font-size: 3em;
+        }
+        span {
+            font-weight: 200;
+            font-size: 1.75em;
+        }
+    }
+    .generated-info {
+        font-family: monospace;
+        font-size: 1em;
+        margin: 5vh 0;
+    }
+    .buttons {
+        button {
+            margin: 0 15px;
+            width: 75px;
+            height: 50px;
+            border-radius: 10px;
+            outline: none;
+            transition: transform 300ms ease-out;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

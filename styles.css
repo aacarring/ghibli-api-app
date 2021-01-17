@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header {
+  font-family: "Kirang Haerang", cursive;
+  text-align: center;
+}
+body header h1 {
+  font-weight: 500;
+  font-size: 3em;
+}
+body header span {
+  font-weight: 200;
+  font-size: 1.75em;
+}
+body .generated-info {
+  font-family: monospace;
+  font-size: 1em;
+  margin: 5vh 0;
+}
+body .buttons button {
+  margin: 0 15px;
+  width: 75px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  transition: transform 300ms ease-out;
+}
+body .buttons button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=styles.css.map */
