@@ -1,0 +1,1 @@
+An info generator app built with HTML, SCSS, JavaScript, and a Studio Ghibli API.
